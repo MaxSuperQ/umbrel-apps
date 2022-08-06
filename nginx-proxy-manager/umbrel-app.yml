@@ -19,5 +19,6 @@ gallery:
   - 2.jpg
   - 3.jpg
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin@example.com"
+defaultPassword: "changeme"
+torOnly: false
