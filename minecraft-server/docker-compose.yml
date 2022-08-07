@@ -35,5 +35,5 @@ services:
       TYPE: "PAPER"
       SPIGET_RESOURCES: "34315,274"
     networks:
-    default:
-      ipv4_address: ${APP_MINECRAFT_SERVER_IP}
+      default:
+        ipv4_address: ${APP_MINECRAFT_SERVER_IP}
