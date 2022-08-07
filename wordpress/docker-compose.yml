@@ -18,7 +18,8 @@ services:
     MYSQL_DATABASE: wordpress
     MYSQL_USER: wordpress
     MYSQL_PASSWORD: wordpress
-  wrdpress:
+
+wordpress:
   depends_on:
     - db
   image: wordpress:php8.1-apache@sha256:95ebce380ccf200b992ee0b542602fcde5ad85f4d770504d8e6ab7dbf360da61
