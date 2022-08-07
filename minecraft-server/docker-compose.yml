@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: $APP_MINECRAFT_SERVER_IP
       APP_PORT: $APP_MINECRAFT_SERVER_DYNMAP_PORT
-  app:
+  mc:
       image: itzg/minecraft-server
       restart: on-failure
       stop_grace_period: 1m
