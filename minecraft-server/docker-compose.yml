@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: $APP_MINECRAFT_SERVER_IP
-      APP_PORT: $APP_MINECRAFT_SERVER_RCON_PORT
+      APP_PORT: $APP_MINECRAFT_SERVER_RCON_WEB_PORT
   web:
     image: itzg/rcon
     restart: on-failure
