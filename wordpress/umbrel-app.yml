@@ -1,7 +1,7 @@
 manifestVersion: 1
 id: wordpress
-category: Wordpress
-name: Vaultwarden
+category: Networking
+name: Wordpress
 version: "php8.1-apache"
 tagline: Wordpress
 description: >-
