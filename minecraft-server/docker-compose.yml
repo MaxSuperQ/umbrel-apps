@@ -3,8 +3,8 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: $APP_MINECRAFT_SERVER_RCON_IP
-      APP_PORT: $APP_MINECRAFT_SERVER_RCON_WEB_PORT
+      APP_HOST: $APP_MINECRAFT_SERVER_IP
+      APP_PORT: $APP_MINECRAFT_SERVER_DYNMAP_PORT
   web:
     image: itzg/rcon
     restart: on-failure
@@ -23,14 +23,17 @@ services:
       default:
         ipv4_address: ${APP_MINECRAFT_SERVER_RCON_IP}
   mc:
-      image: itzg/minecraft-server
-      restart: on-failure
-      stop_grace_period: 1m
-      ports:
-        - ${APP_MINECRAFT_SERVER_GAME_PORT}:25565
-      volumes:
-        - ${APP_MINECRAFT_SERVER_DATA_DIR}:/data
-      environment:
-        EULA: "TRUE"
-        TYPE: "PAPER"
-        SPIGET_RESOURCES: "34315,274"
+    image: itzg/minecraft-server
+    restart: on-failure
+    stop_grace_period: 1m
+    ports:
+      - ${APP_MINECRAFT_SERVER_GAME_PORT}:25565
+    volumes:
+      - ${APP_MINECRAFT_SERVER_DATA_DIR}:/data
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      SPIGET_RESOURCES: "34315,274"
+    networks:
+    default:
+      ipv4_address: ${APP_MINECRAFT_SERVER_IP}
