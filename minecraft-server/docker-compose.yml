@@ -32,3 +32,5 @@ services:
         - ${APP_MINECRAFT_SERVER_DATA_DIR}:/data
       environment:
         EULA: "TRUE"
+        TYPE: "PAPER"
+        SPIGET_RESOURCES: "34315,28140,9089"
