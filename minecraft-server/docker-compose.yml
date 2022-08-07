@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: $APP_MINECRAFT_SERVER_IP
+      APP_HOST: $APP_MINECRAFT_SERVER_RCON_IP
       APP_PORT: $APP_MINECRAFT_SERVER_RCON_WEB_PORT
   web:
     image: itzg/rcon
@@ -19,6 +19,9 @@ services:
       RWA_RCON_PASSWORD: minecraft
     ports:
       - ${APP_MINECRAFT_SERVER_RCON_WEBSOCKET_PORT}:4327
+    networks:
+      default:
+        ipv4_address: ${APP_MINECRAFT_SERVER_RCON_IP}
   mc:
       image: itzg/minecraft-server
       restart: on-failure
