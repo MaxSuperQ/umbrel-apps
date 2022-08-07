@@ -1,0 +1,23 @@
+manifestVersion: 1
+id: minecraft-server
+category: GAMING
+name: Minecraft Server
+version: "latest"
+tagline: Minecraft Server
+description: >-
+  This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot.
+releaseNotes: >-
+  TLDL
+developer: ITZG
+website: https://suredbits.com/
+dependencies: []
+repo: https://github.com/bitcoin-s/krystal-bull
+support: https://t.me/suredbits
+port: 4326
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
