@@ -33,4 +33,4 @@ services:
       environment:
         EULA: "TRUE"
         TYPE: "PAPER"
-        SPIGET_RESOURCES: "34315,28140,9089"
+        SPIGET_RESOURCES: "34315"
