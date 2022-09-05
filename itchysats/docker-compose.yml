@@ -7,7 +7,7 @@ services:
       APP_PORT: 8000
 
   web:
-    image: ghcr.io/itchysats/itchysats/taker:0.5.5@sha256:0cad22e242288d95f7128261034b336b14fa4888f9851177d88d7e3105c93e99
+    image: ghcr.io/itchysats/itchysats/taker:0.6.1@sha256:5ad0baea350bee41b6e828030ff37f7bb61359d381c7afd15f874ee2bf9d6c62
     restart: on-failure
     stop_grace_period: 1m
     volumes:
