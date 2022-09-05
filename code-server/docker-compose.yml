@@ -9,7 +9,7 @@ services:
       
 
   server:
-    image: codercom/code-server:4.4.0@sha256:f0b4cdac7b7742ec83167666b5bc8abb90c4f2660247d482f55fee916d079cb6
+    image: codercom/code-server:4.6.1@sha256:5ed6625453cadc093c782b515add2f186c9b9dc79e6391d6ba902a2f3d675c32
     restart: on-failure
     user: "1000:1000"
     volumes:
